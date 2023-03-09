@@ -14,9 +14,9 @@ description: > # this means to ignore newlines until the next tag
   Hosted by Sorbonne Université 
 author: Mathieu Salanne
 # base of your site relative to the root of the Web site, eg /Pascal.Poizat or ""
-baseurl: "/website"
+baseurl: "/ampere"
 # URL of your site, eg https://pages.lip6.fr/Pascal.Poizat or http://pascalpoizat.github.io
-url: "https://gitlab.com/ampere2"
+url: "https://salanne.github.io"
 #blog_dir: /blog
 #permalink: /blog/posts/:year/:month/:day/:title/ # prefixed style
 #category_dir: /blog/categories/

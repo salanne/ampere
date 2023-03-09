@@ -1,0 +1,8 @@
+{% assign max='now'|date:"%Y" %}
+{% assign min=max|minus: include.nbyears|plus: 1 %}
+{% assign smin=min|plus: "" %}
+
+{% bibliography -q @article[{{ site.kind.label }}!=national] -T bib-noscript %}
+
+
+

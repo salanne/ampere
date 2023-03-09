@@ -1,0 +1,149 @@
+#
+# SITE SETTINGS
+#
+
+# references for updates
+# https://iconsvg.xyz
+# https://feathericons.com/
+
+# site information
+
+title: AMPERE project
+description: > # this means to ignore newlines until the next tag
+  ERC Grant agreement  771294<br/>
+  Hosted by Sorbonne Université 
+author: Mathieu Salanne
+# base of your site relative to the root of the Web site, eg /Pascal.Poizat or ""
+baseurl: "/website"
+# URL of your site, eg https://pages.lip6.fr/Pascal.Poizat or http://pascalpoizat.github.io
+url: "https://gitlab.com/ampere2"
+#blog_dir: /blog
+#permalink: /blog/posts/:year/:month/:day/:title/ # prefixed style
+#category_dir: /blog/categories/
+#category_title_prefix: "category: "
+
+# author information
+
+snapshot: images/black3.png
+#email: firstname.lastname@gmail.com
+
+networks:
+  twitter:
+    url: https://twitter.com/
+    username: ERCampere
+  gitlab:
+    url: https://gitlab.com/
+    username: ampere2
+    #  dblp:
+    # url: http://www.informatik.uni-trier.de/~ley/pers/hd/
+    #username: p/Poizat:Pascal
+
+bio:
+  with-logos: false
+
+contacts:
+  phenix:
+          #    email: mathieu.salanne@sorbonne-universite.fr
+    address: >
+      UMR 8234<br/>
+      Sorbonne Université, CNRS<br/>
+      4 place Jussieu<br/>
+      75252 PARIS Cedex 05<br/>
+      France
+    direction:
+      address: >
+        aisle 42-43, 2nd floor
+      map: https://www.google.fr/maps/dir//Sorbonne+Universit%C3%A9+Campus+Pierre+et+Marie+Curie,+4+Place+Jussieu,+75005+Paris/@48.8471071,2.355305,17z/data=!4m16!1m6!3m5!1s0x47e671fa8dc1c30b:0xf0b82c4672cb0c0!2sSorbonne+Universit%C3%A9+Campus+Pierre+et+Marie+Curie!8m2!3d48.8471036!4d2.357499!4m8!1m0!1m5!1m1!1s0x47e671fa8dc1c30b:0xf0b82c4672cb0c0!2m2!1d2.357499!2d48.8471036!3e2?hl=fr
+      public_transportation:
+        stop: Metro line 7 -- Jussieu 
+        link: http://www.ratp.fr/itineraires/en/ratp/recherche-avancee?end=Jussieu+%28METRO%29%2C+Paris
+  mdls:
+          #    email: firstname.lastname@parisnanterre.fr
+    address: >
+      USR 3441<br/>
+      CEA, CNRS, Université Paris Saclay<br/>
+      CEA Saclay<br/>
+      91191 Gif-sur-Yvette Cedex <br/>
+      France
+    direction:
+      address: >
+         batiment 565 - Digiteo
+      map: https://www.google.fr/maps/dir//Maison+de+la+Simulation,+91400+Saclay/@48.7275388,2.1542931,17z/data=!4m16!1m6!3m5!1s0x47e67f3d6ca35351:0xad658a7f81b4a1fe!2sMaison+de+la+Simulation!8m2!3d48.7275353!4d2.1564871!4m8!1m0!1m5!1m1!1s0x47e67f3d6ca35351:0xad658a7f81b4a1fe!2m2!1d2.1564871!2d48.7275353!3e2
+      public_transportation:
+        stop: Bus line 91.06 -- Raoul Dautry 
+        link: http://www.albatrans.net/wp-content/uploads/2019/10/Albatrans-9106-Depliant-hiver-NEW.pdf
+
+# research
+
+research:
+  presentation:
+    overview: false
+    publications: true
+    talks:  false
+    conferences: false
+    software: true
+    inreview: true
+    #      restriction:
+    #    publications: 5
+      #      conferences: 10
+
+
+# apparence of posts
+
+# apparence of buttons
+
+link_btn_size: btn-xs
+link_btn_color: btn-primary
+publications_btn_size: btn-xs
+publications_btn_color: btn-default
+publications_btn_textcolor: text-primary
+
+# alerts
+
+alerts:
+  no-javascript:
+    danger: true
+    warning: true
+    information:  true
+
+# bibliography
+
+kind:
+  label: pp_kind # label used in .bib files to denote the kind (international/national) of references
+  separate:  # should international/national references be separated: (true | false)
+    article: false
+    inbook: false
+    inproceedings: false
+
+scholar:
+  style: _bibliography/mystyle.csl
+  locale: en
+  sort_by: year, pp_rank
+  order: descending
+  group_by: none
+  group_order: ascending
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings:    true
+  use_raw_bibtex_entry: false
+  bibtex_skip_fields: [pp_shortbooktitle, pp_rank, pp_kind]
+  # details_dir:    bibliography
+  # details_layout: bibtex.html
+  # details_link:   Details
+  query: "@*"
+
+# other settings
+
+exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
+exclude:  [vendor]
+
+plugins: ['jekyll/scholar']
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+     # input: GFM
+     syntax_highlighter: rouge

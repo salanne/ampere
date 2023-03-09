@@ -1,0 +1,24 @@
+<div class="starter-template">
+    <p class="lead"> The AMPERE project is mainly carried in two laboratories:
+    </p>
+</div>
+
+<div class="row">
+
+    <div class="col-sm-offset-0 col-md-3"></div>
+
+    <div class="col-sm-6 col-md-3">
+        <h4>PHENIX </h4>
+        {% include print_contact.html contact=site.contacts.phenix %}
+        <br/>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <h4>Maison de la simulation</h4>
+        {% include print_contact.html contact=site.contacts.mdls %}
+        <br/>
+    </div>
+
+    <div class="col-sm-offset-0 col-md-3"></div>
+
+</div>
